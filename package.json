@@ -4,7 +4,7 @@
   "description": "",
   "main": "Testing.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "/spec/testing.spec.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Lluran/Intro-to-Northcoders#readme",
   "dependencies": {
-    "chai": "^4.2.0"
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
   }
 }
