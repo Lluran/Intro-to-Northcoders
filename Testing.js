@@ -12,14 +12,16 @@ How to write tests
 * a separate folder (usually called spec or tests) and create a testing file and link it to js document you want to test. - MAKE SURE CHAI IS INSTALLED VIA NPM
 *NEED TO ENSURE MOCHA IS INSTALLED
 * see sum3 below for syntax of linking to testing module
-* see spec folder/testin.spec file for test syntax
-*can change the 
+* see spec folder/testing.spec file for test syntax
+*can change the instruction to run test by editing the test script in the package.json
 
 Good Practice
 Tests are only looking to pass and will pass if there's not content to the test
 Need to see tests fail before you see them pass otherwise we could be getting false positives - change the test so that it will throw an assertion error to check that its testing the correct things
 
-*/
+Test driven development - TDD (is part of agile methodoligies) is a process by which tests are incrememntally developed until reaching robustness
+
+
 function sum (a, b) {
  return +a + +b
 };
@@ -29,8 +31,15 @@ function sum2 (a, b) {
   return +a + +b
 };
 console.assert(sum(3, 4) === 6, 'Does not work that way');
+*/
 
 function sum3(...args) { //however many arguments this receieves it will package them into an array
   return args.reduce((total, num) => total + num);
 };
-module.export = sum3;
+
+function checkPasswordStrength(password) {
+ if (password.length >= 6) return false;
+};
+module.export = {
+  sum3, checkPasswordStrength
+};

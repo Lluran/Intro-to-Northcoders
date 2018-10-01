@@ -1,7 +1,15 @@
-const sum3 = require('../Testing');
-const {expect} = require('chai')//.expect; can use curly brackets to call object property (as we've done here) or the .propert notation
+const {sum3, checkPasswordStrength} = require('../Testing');
+const { expect } = require('chai')//.expect; can use curly brackets to call object property (as we've done here) or the .property notation
 
 //below is the syntax for writing tests
+describe.only('checkPasswordStrength', () => {
+  it('return false if the password is fewer than 6 characters', () => {
+    const actual = checkPasswordStrength('David');
+    const expected = false;
+    expect(actual).to.equal(expected);
+  })
+})
+
 describe('sum3', () => {
 it('returns two numbers added together', () => {
   const expected = 3;
@@ -22,6 +30,6 @@ expect(actual).to.equal(expected);
     const expected = 20;
     const actual = sum3(5, 5, 5, 5);
     expect(actual).to.equal(expected);
-    expect(sum(1, 4, 6, 0, 4, 6, 1, 4, 6)).to.equal(31);
+    expect(sum3(1, 4, 6, 0, 4, 6, 1, 4, 6)).to.equal(31);
   });
 })
