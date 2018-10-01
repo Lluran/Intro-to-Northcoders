@@ -2,4 +2,4 @@ function addTwoNumbers(a, b){
   return a + b
   };
 
-module.export = addTwoNumbers;
+module.exports = addTwoNumbers;

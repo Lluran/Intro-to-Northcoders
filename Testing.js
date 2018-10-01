@@ -40,6 +40,6 @@ function sum3(...args) { //however many arguments this receieves it will package
 function checkPasswordStrength(password) {
  if (password.length >= 6) return false;
 };
-module.export = {
+module.exports = {
   sum3, checkPasswordStrength
 };
