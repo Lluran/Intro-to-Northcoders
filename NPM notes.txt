@@ -1,0 +1,4 @@
+NPM can be used to install packages
+NPM init will initialise nom - will provide you with various options
+NPM init -y  will do this more quickly
+This will create a package.JSON file

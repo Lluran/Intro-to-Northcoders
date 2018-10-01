@@ -1,0 +1,22 @@
+{
+  "name": "tetst",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Testing.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lluran/Intro-to-Northcoders.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lluran/Intro-to-Northcoders/issues"
+  },
+  "homepage": "https://github.com/Lluran/Intro-to-Northcoders#readme",
+  "dependencies": {
+    "chai": "^4.2.0"
+  }
+}
