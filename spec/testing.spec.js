@@ -1,14 +1,8 @@
-const addTwoNumbers = require('../testing 2')
+const {checkPasswordStrength, sum3} = require('../Testing')
 const { expect } = require('chai')//.expect; can use curly brackets to call object property (as we've done here) or the .property notation
 
 //below is the syntax for writing tests
-describe.only('addTwoNumbers', () => {
-  it('returns two numbers added together', () => {
-    const actual = addTwoNumbers(3, 4);
-    const expected = 7;
-    expect(actual).to.equal(expected);
-  });
-});
+/*Quick note on testing @channel - if you are expecting something to equal an array or object, you need to use `.to.eql` in your test as opposed to `.to.equal`. We’ll go into more depth on this on Wednesday, but for now just rest on the knowledge that it relates to what Sam briefly mentioned about objects in JS being having references to their own point in memory. `[1, 2, 3]` does not equal `[1, 2, 3]`, contrary to appearances*/
 
 describe('checkPasswordStrength', () => {
   it('return false if the password is fewer than 6 characters', () => {

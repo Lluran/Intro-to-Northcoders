@@ -43,3 +43,6 @@ function checkPasswordStrength(password) {
 module.exports = {
   sum3, checkPasswordStrength
 };
+/*
+Quick note on testing @channel - if you are expecting something to equal an array or object, you need to use `.to.eql` in your test as opposed to `.to.equal`. We’ll go into more depth on this on Wednesday, but for now just rest on the knowledge that it relates to what Sam briefly mentioned about objects in JS being having references to their own point in memory. `[1, 2, 3]` does not equal `[1, 2, 3]`, contrary to appearances
+*/
